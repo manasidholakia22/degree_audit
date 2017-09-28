@@ -1,79 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Dashboard</title>
-	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">-->
-	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	</head>
-          <body>
-            <div class="container-fluid" id="nb">
-            <nav class="navbar navbar-expand-lg navbar-light bg-#8fbcee">
-              
-                   <a href="#" class="navbar navbar-brand">DAIICT</a>
-               
-                <div class="container">
-                	<div class="colapse navbar-collapse">
-                  			<div class="dropdown">
-	                			<button class="btn btn-primary dropdown-toggle" type="button" id="btn_prog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		   					 		Programmes
-		  						</button>
-		  						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		    						<a class="dropdown-item" href="#">M.Sc.IT</a><br>
-		   							<a class="dropdown-item" href="#">B.Tech</a><br>
-		    						<a class="dropdown-item" href="#">M.Tech</a><br>
-		    						<a class="dropdown-item" href="#">M.Des</a><br>
-		  						</div>
-		  					</div>
-		  					<div>
-		  						<button class="btn btn-primary"> Courses </button>
-		  					</div>
-					</div>
-				</div>
-				<div class="nav navbar-nav navbar-right">
-						<button class="btn btn-primary " id="logout">Logout</button>
-					</div>
-			</nav>
-         </div>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="css/navbar.css" </head>
 
-	         <div class="container">
-	         	<p></p><p></p>
-	      <table class="table">
-	    <thead>
-	      <tr>
-	        <th>Course ID</th>
-	        <th>Course Name</th>
-	        <th>Type</th>
-	        <th>Action</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>IT-627</td>
-	        <td>Sen</td>
-	        <td>Autumn</td>
-	        <td><button type="button" class="btn btn-default">Delete</button></td>
-	      </tr>
-	      <tr>
-	        <td>IT-627</td>
-	        <td>Sen</td>
-	        <td>Autumn</td>
-	        <td><button type="button" class="btn btn-primary">Delete</button></td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
-</div>
-         </div>
+  <body>
+    <div class="container-fluid">
+      <div class="row-2">
+        <div id="navarea"></div>
+      </div>
+      <div class="row-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
 
-        </body>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Course Id</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>ab 123</td>
+                    <td>xyzabc</td>
+                    <td>0-0-4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>ab 123</td>
+                    <td>xyzabc</td>
+                    <td>0-0-4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>ab 123</td>
+                    <td>xyzabc</td>
+                    <td>0-0-4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/navbar.js"></script>
+  </body>
 
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </html>
